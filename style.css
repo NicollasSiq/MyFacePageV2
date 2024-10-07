@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte */
+    line-height: 1.6;
+    background-color: #5d15dc; /* Define a cor de fundo */
+    color: #b119be; /*  Cor da fonte */
+    display: flex; /* usa flexbox para o layout da pagina*/
+    flex-direction: column; /*organiza os elementos em coluna */
+    min-height: 100vh; /* Altura mínima */
+    text-decoration: none; /* Tirar risco de baixo do link */
+}
+
+
+/* estilo de cabeçalho */
+header {
+    background-color: #333;
+    padding: 1rem; /* Espaçamento interno */
+    display: flex; /* usa flexbox para o layout do cabeçalho*/
+    justify-content: space-between; /* distribui elementos horizontalmente */
+    align-items: center; /* alinha elementos verticalmente */
+}
+
+header h1 {
+    color: #fff;
+}
+    
+nav ul {
+    list-style: none;
+    display: flex; /* usa flexbox para o layout da barra de navegaçao*/
+    margin-right: 2rem; 
+}
+
+nav ul li {
+    /* espaçamento entre os itens */
+    margin-left: 1rem;
+}
+
+/* Parte do botão */
+button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    box-shadow: #fc22fc0d 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+}
+
+/* Parte dos botão animado */
+button:hover {
+    letter-spacing: 3px;
+    background-color: #5d18dc 0px 7px 29px 0px;
+    color: #fff;
+    box-shadow: #5d18dc 0px 7px 29px 0px; 
+}
+
+button:active{
+    letter-spacing: 3px;
+    background-color: #5d15dc;
+    color: #fff;
+    box-shadow: #5d18dc 0px 0px 0px 0px;
+    transform:translateY(10px)
+}
+
+.Escrita {
+    color: #333;
+}
+
+main {
+    flex: 1; /* permite o conteudo principal crecer e ocupar espaço disponivel*/
+    width: 80%; /* Largura definida */
+    margin: 20px auto;
+   display: flex; /* usa flexbox para o layout do conteudo principal*/
+    flex-wrap: wrap; /* permite que os elementos quebrem para a proxima linha*/
+}
+
+article {
+    flex: 0 0 70%;
+    width: 50%;
+    float: left;
+    padding: 1rem;
+    margin-bottom: 1rem; 
+    border-radius: 8px;
+}
+
+article h2 {
+    color: #333;
+}
+
+article img {
+    width: 50%;
+}
+
+aside {
+    flex: 0 0 28%; /* Não cresce, não encolhe, base de 28% */
+    background-color: #5d15dc;
+    padding: 1rem; /* Eapaçamento interno */
+    margin-left: 2%; /* cria espaço entre o artigo e a barra lateral   */
+    background-color: #5d15dc;
+    box-sizing: border-box;
+    text-align: left; /* Texto na esquerda */
+}
+
+section {
+    flex: 0 0 100%; /* ocupa toda a largura*/
+   background-color: #f2dfd5;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* estilos de rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 0;
+}
+
+/* _________________________________________________________ */
+/* Reutilizando HTML do index no sobre e economizando linhas no CSS e mudando algumas informações */
+/* Parte do Sobre*/
+
+.Sobre {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #333;
+}
+
+.Sobre h3 {
+    color: #333;
+}
+
+/* _________________________________________________________ */
+/* Parte do Hobbies */
+
+.Hobbies {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #333;
+}
